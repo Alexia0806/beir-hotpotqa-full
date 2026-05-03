@@ -1,31 +1,59 @@
 # BEIR HotpotQA Full
 
-This repository publishes a GitHub-safe public package of the official BEIR `hotpotqa` full dataset.
+Public packaging of the official BEIR `hotpotqa` dataset, prepared for GitHub publication.
 
-## Public Asset
+## What Is Included
 
-- Release asset: `beir-hotpotqa-full.tar.gz`
-- SHA-256: `1d6bc5e4bcd5cbad41e033b28f5056499535928ec0a0fb1e6bf17ffcbdf60a6c`
+- Full official `corpus.jsonl`, sharded into 69 files to stay below GitHub's single-file size limit
+- Corpus transport format: gzip-sharded JSONL
+- Full official `queries.jsonl`
+- Full official `qrels/` directory
+- A normalized `queries.normalized.jsonl` convenience file
+- Build metadata in `manifest.json`
 
-## Package Summary
+## Directory Layout
 
-- Official dataset: `hotpotqa`
-- Corpus rows: `5,233,329`
-- Query rows: `97,852`
+```text
+hotpotqa/
+  corpus/
+    corpus-00000.jsonl
+    ...
+  queries.jsonl
+  queries.normalized.jsonl
+  qrels/
+    train.tsv
+    dev.tsv
+    test.tsv
+manifest.json
+```
+
+## Counts
+
+- Corpus rows: 5233329
+- Corpus uncompressed size: 2149313046
+- Corpus gzip shard size: 641810159
+- Query rows: 97852
+- Default evaluation split: `test`
 - Qrels:
-  - `train.tsv`: `170,000`
-  - `dev.tsv`: `10,894`
-  - `test.tsv`: `14,810`
-- Default BEIR evaluation split: `test`
+  - train: 170000 rows / 85000 queries
+  - dev: 10894 rows / 5447 queries
+  - test: 14810 rows / 7405 queries
 
-## Why The Dataset Is Attached As A Release Asset
+## Notes
 
-The unpacked corpus is over `2GB`, so the public package is distributed as a compressed release asset instead of storing the full corpus directly in the Git tree. The asset itself contains:
+- The corpus shards preserve the original BEIR document schema line-for-line.
+- To reconstruct a single-file corpus locally:
 
-- gzip-sharded full corpus
-- official queries
-- official qrels
-- normalized queries convenience file
-- manifest and packaging scripts
+```bash
+python3 - <<'PY'
+import gzip
+from pathlib import Path
+parts = sorted(Path("hotpotqa/corpus").glob("corpus-*.jsonl.gz"))
+with open("corpus.jsonl", "wb") as out:
+    for part in parts:
+        with gzip.open(part, "rb") as src:
+            out.write(src.read())
+PY
+```
 
-Use `manifest.json` in this repository for the detailed package metadata.
+- For BEIR-style evaluation, use `hotpotqa/queries.jsonl` with `hotpotqa/qrels/test.tsv` unless you intentionally need another split.
