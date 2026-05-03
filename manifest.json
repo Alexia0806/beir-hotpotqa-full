@@ -1,0 +1,525 @@
+{
+  "dataset": "hotpotqa",
+  "source": {
+    "official_dataset_root": "/Users/alexia/Desktop/aia/ragbenchmark/BeIR_beir/hotpotqa",
+    "corpus_sha256": "3e776d2343352f83341878202b8c49cc1ebe6e2ad4c2a77a21c116cafa229334",
+    "queries_sha256": "26bd91dd9ad69592c02e07180e62096f572b6814f5f413695151485b4ab40a2c"
+  },
+  "packaging": {
+    "github_safe": true,
+    "single_file_limit_strategy": "gzip-shard corpus.jsonl so each shard stays below GitHub's 100MB limit",
+    "max_shard_uncompressed_bytes": 31457280
+  },
+  "data": {
+    "query_count": 97852,
+    "normalized_query_count": 97852,
+    "default_eval_split": "test"
+  },
+  "qrels": {
+    "dev": {
+      "rows": 10894,
+      "queries": 5447
+    },
+    "test": {
+      "rows": 14810,
+      "queries": 7405
+    },
+    "train": {
+      "rows": 170000,
+      "queries": 85000
+    }
+  },
+  "corpus": {
+    "total_rows": 5233329,
+    "shard_count": 69,
+    "max_shard_uncompressed_bytes": 31457280,
+    "total_uncompressed_bytes": 2149313046,
+    "total_gzip_bytes": 641810159,
+    "shards": [
+      {
+        "file": "hotpotqa/corpus/corpus-00000.jsonl.gz",
+        "rows": 66645,
+        "bytes_gzip": 8954378,
+        "bytes_uncompressed": 31456952,
+        "sha256": "26ad52acca6cd721e0e23e2a8b61f09fdfd4862f8b93b554e45f57a4236b2e6f"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00001.jsonl.gz",
+        "rows": 66891,
+        "bytes_gzip": 9623279,
+        "bytes_uncompressed": 31457150,
+        "sha256": "f1e9b0217a958b37ec98df20b78bd30de7b8058fa5c98a4288ebc6a636d3779a"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00002.jsonl.gz",
+        "rows": 64364,
+        "bytes_gzip": 10263075,
+        "bytes_uncompressed": 31457163,
+        "sha256": "84a684cdd68933d268aaaa3c12678173b26b909ef41a05a410458b5e77383c64"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00003.jsonl.gz",
+        "rows": 66710,
+        "bytes_gzip": 10253942,
+        "bytes_uncompressed": 31456739,
+        "sha256": "100ce78ff2708461fad199831c3e17a291996ff68b4cc1863963848e4494bb04"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00004.jsonl.gz",
+        "rows": 67587,
+        "bytes_gzip": 10296168,
+        "bytes_uncompressed": 31457031,
+        "sha256": "431842b3cda950cb626f368189ad828d2120bbca4b647a2755989dab05bf9450"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00005.jsonl.gz",
+        "rows": 67737,
+        "bytes_gzip": 10224090,
+        "bytes_uncompressed": 31456911,
+        "sha256": "ab590744c35a6f9f1973df35f2de2c20b9e78fe182376aa7dd8348615839e611"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00006.jsonl.gz",
+        "rows": 67595,
+        "bytes_gzip": 10346172,
+        "bytes_uncompressed": 31456684,
+        "sha256": "06a800c28402ca91309f662e6a063e4db3b32cfd956ce062f4dcf21647c3e0ee"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00007.jsonl.gz",
+        "rows": 68442,
+        "bytes_gzip": 10328119,
+        "bytes_uncompressed": 31457186,
+        "sha256": "4adf5fe9075796d3a043a9b4f437994ab2d0db3eb136d216ede1acc83fe092bb"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00008.jsonl.gz",
+        "rows": 69424,
+        "bytes_gzip": 10324403,
+        "bytes_uncompressed": 31457197,
+        "sha256": "051b1a0fc675656e6c0a94b28b81d868d17449c3568ac8b6d70c42f578bc15f8"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00009.jsonl.gz",
+        "rows": 69923,
+        "bytes_gzip": 10263074,
+        "bytes_uncompressed": 31457263,
+        "sha256": "12f14c0be0c51a8097a1635b4cf21b17e11d4cd9a057ff9ec96db465875770a3"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00010.jsonl.gz",
+        "rows": 69893,
+        "bytes_gzip": 10269612,
+        "bytes_uncompressed": 31456894,
+        "sha256": "75ddb7c811d76638ee98797c3c25f58e0a5fe78642d713d8413576f5788f4787"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00011.jsonl.gz",
+        "rows": 70953,
+        "bytes_gzip": 10150463,
+        "bytes_uncompressed": 31457060,
+        "sha256": "5e4e657c672da423b5dc0e77dd3a0058450509310b595ff26d9aa4889ce1aa9d"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00012.jsonl.gz",
+        "rows": 71518,
+        "bytes_gzip": 10119723,
+        "bytes_uncompressed": 31457080,
+        "sha256": "bf9ec510b83458e1139b25c8b5e5edce52bc4ddf2583ce71e21c169c29c8562c"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00013.jsonl.gz",
+        "rows": 71345,
+        "bytes_gzip": 10123715,
+        "bytes_uncompressed": 31457207,
+        "sha256": "59b0f0b2e4f4d1a143f4521e3050f3bc9412e5a9e9079e91ecb0b5d0b0cb0c71"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00014.jsonl.gz",
+        "rows": 72316,
+        "bytes_gzip": 10141478,
+        "bytes_uncompressed": 31456729,
+        "sha256": "67fee869521076ef16ee49c57f2552aafc86c403ec94c1e97a85f37edc0891ba"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00015.jsonl.gz",
+        "rows": 74515,
+        "bytes_gzip": 9893705,
+        "bytes_uncompressed": 31456892,
+        "sha256": "a8e565fcfdbdaac513bf2671df23ebf31c846ea149e3d4d05f5b74848e65d054"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00016.jsonl.gz",
+        "rows": 74273,
+        "bytes_gzip": 9676976,
+        "bytes_uncompressed": 31456771,
+        "sha256": "c2f38c91c5bc0fa5c3e4f839becbdc5f16e4e0483a12dbdbf5a8dbee61b8e096"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00017.jsonl.gz",
+        "rows": 73271,
+        "bytes_gzip": 9993475,
+        "bytes_uncompressed": 31457013,
+        "sha256": "ce0f055e1a44251b35bcd7e6d0f4a2b2161595bbb0af822f389702f25b0e9e49"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00018.jsonl.gz",
+        "rows": 73860,
+        "bytes_gzip": 10058782,
+        "bytes_uncompressed": 31456992,
+        "sha256": "f82127588de86629e04648d5a3be8c8985fa33d561bcb7fb7305e178854b052f"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00019.jsonl.gz",
+        "rows": 73782,
+        "bytes_gzip": 10032221,
+        "bytes_uncompressed": 31456961,
+        "sha256": "c60ce3b07aff97d8eaac7a3207fe38fce98f4206ae1ff4acb99914208ec7d567"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00020.jsonl.gz",
+        "rows": 75025,
+        "bytes_gzip": 9942879,
+        "bytes_uncompressed": 31457005,
+        "sha256": "1e573829649ae8a73a5015fda73bc28226596eebbed7f411a6aa97ab1e27e58f"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00021.jsonl.gz",
+        "rows": 73572,
+        "bytes_gzip": 9863695,
+        "bytes_uncompressed": 31456970,
+        "sha256": "27e9a9b1d8bf37dde0f8363a677e1df656f7629fd340597126be4c6513eef719"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00022.jsonl.gz",
+        "rows": 78018,
+        "bytes_gzip": 9507816,
+        "bytes_uncompressed": 31456899,
+        "sha256": "66ff5cbbfe988eba86181a47dc2b422a2152c63417a7282a0ad472e7efcaadfb"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00023.jsonl.gz",
+        "rows": 81587,
+        "bytes_gzip": 8704862,
+        "bytes_uncompressed": 31457195,
+        "sha256": "fa6d60febd1f3ed264d37bf64f5284b9b99c8c4b8f98b0256c9651e651e9cd15"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00024.jsonl.gz",
+        "rows": 80511,
+        "bytes_gzip": 9134931,
+        "bytes_uncompressed": 31457259,
+        "sha256": "9f4e931170ee170e3e5a15bbf28340808478f8114fb8320b29bf5289151a7eac"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00025.jsonl.gz",
+        "rows": 77999,
+        "bytes_gzip": 9482828,
+        "bytes_uncompressed": 31456818,
+        "sha256": "c34746336bcf626a200ee5e7e03ea8c628c88eca073e5810950c58fe5d97b938"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00026.jsonl.gz",
+        "rows": 82698,
+        "bytes_gzip": 8860843,
+        "bytes_uncompressed": 31457041,
+        "sha256": "07b5f2a5404a831e94a80158ebc0baa12bb562a153fc2a58f8bc018b84378cec"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00027.jsonl.gz",
+        "rows": 83021,
+        "bytes_gzip": 8912427,
+        "bytes_uncompressed": 31456829,
+        "sha256": "13e635b61673f18c1afe81c3866fbe0ec505eb420e08553749b57182486fbe41"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00028.jsonl.gz",
+        "rows": 76864,
+        "bytes_gzip": 9557754,
+        "bytes_uncompressed": 31456935,
+        "sha256": "de8d93d9e96cd8cdee94a33ee42a81ef8eb2c792dd6188edaff2bf1d9425ba25"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00029.jsonl.gz",
+        "rows": 77485,
+        "bytes_gzip": 9127949,
+        "bytes_uncompressed": 31457111,
+        "sha256": "985c95c05b34f8f2449771220fb8bb55aedd298ad44dc3889826674e849e830a"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00030.jsonl.gz",
+        "rows": 77403,
+        "bytes_gzip": 7985464,
+        "bytes_uncompressed": 31456836,
+        "sha256": "fc44cbae74e39621ad6931f545322a9c5cf573708a2fb1f5dd39a7105d7fa8e8"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00031.jsonl.gz",
+        "rows": 77166,
+        "bytes_gzip": 8892855,
+        "bytes_uncompressed": 31457267,
+        "sha256": "19d2186295ec1bed8170668a5c20f9b11f10085fb77be8e429cee01221e97958"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00032.jsonl.gz",
+        "rows": 76556,
+        "bytes_gzip": 9230782,
+        "bytes_uncompressed": 31457196,
+        "sha256": "073ac95a68bb04b49715b6799cfeaf4e008aa2330f2457c2dece6de4918a343b"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00033.jsonl.gz",
+        "rows": 76985,
+        "bytes_gzip": 8405765,
+        "bytes_uncompressed": 31457213,
+        "sha256": "71bc8840cd5f1b5a13e120e0699ea2f3260a9b2f26b7fa42b34e16491e17017d"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00034.jsonl.gz",
+        "rows": 81682,
+        "bytes_gzip": 8918441,
+        "bytes_uncompressed": 31457114,
+        "sha256": "4ff32d4cb6f04d41c3b37e08946b1e25d88518f5f7a85c8428aab72cd48e5163"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00035.jsonl.gz",
+        "rows": 79144,
+        "bytes_gzip": 9290051,
+        "bytes_uncompressed": 31457197,
+        "sha256": "3374ac919265f1e62bd3776639ba5098d43be2c2f59a9f8baddff455bc48baf9"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00036.jsonl.gz",
+        "rows": 81481,
+        "bytes_gzip": 9022503,
+        "bytes_uncompressed": 31457241,
+        "sha256": "125b2fe8e6da17ded8123ea3b525254980618be642f74a043f0b98c048d9d857"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00037.jsonl.gz",
+        "rows": 77119,
+        "bytes_gzip": 9470638,
+        "bytes_uncompressed": 31457095,
+        "sha256": "7a94e09e1b557a933097c0c1afedb0edcd0ba67d90c6d17869f94d41ed28d9df"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00038.jsonl.gz",
+        "rows": 79719,
+        "bytes_gzip": 9242045,
+        "bytes_uncompressed": 31456943,
+        "sha256": "1ced20db10e417b5823de01c563a0e8df39e44531fda29a7cd6c8f22eacd197a"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00039.jsonl.gz",
+        "rows": 80777,
+        "bytes_gzip": 9109470,
+        "bytes_uncompressed": 31456785,
+        "sha256": "128409f487174d750f87fb087ffdaac9cdba88fc898fbec5d590d7c3f3b60688"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00040.jsonl.gz",
+        "rows": 78896,
+        "bytes_gzip": 9248438,
+        "bytes_uncompressed": 31457176,
+        "sha256": "5f55b703fc7d2a5807207a63a4b0c19794b032e44cf9e51fd0f8662ddcd58a18"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00041.jsonl.gz",
+        "rows": 81084,
+        "bytes_gzip": 9123019,
+        "bytes_uncompressed": 31456956,
+        "sha256": "6668ea4508ef2948fad9b26c47ac937822aa7d181e1351e0d4b346aaa97d0444"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00042.jsonl.gz",
+        "rows": 75422,
+        "bytes_gzip": 9259009,
+        "bytes_uncompressed": 31457103,
+        "sha256": "e0b00fed882adbd1d54933e038184970d059a0f2031817d487d1a986685d793a"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00043.jsonl.gz",
+        "rows": 78268,
+        "bytes_gzip": 9533615,
+        "bytes_uncompressed": 31456948,
+        "sha256": "a61b5344ee1de84f86a79356e65420b49f88d06a30d3fc3e1e29506d9c7f7439"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00044.jsonl.gz",
+        "rows": 77362,
+        "bytes_gzip": 9607171,
+        "bytes_uncompressed": 31457092,
+        "sha256": "d8853f9310f1a1efcf0f8c9ea8574b6a4299e051fa01eddfeec3b8d253cfed1b"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00045.jsonl.gz",
+        "rows": 77662,
+        "bytes_gzip": 9182426,
+        "bytes_uncompressed": 31457127,
+        "sha256": "dc4b008b8405e2df977be5847dc6f775c680394e1b9abe568a608c31fc6e3a57"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00046.jsonl.gz",
+        "rows": 81462,
+        "bytes_gzip": 9125233,
+        "bytes_uncompressed": 31457202,
+        "sha256": "bafcf3a334394a5afc3f2a9331b0cec8c6fb7632cbd18b85b1aa5f6b1e6fd15d"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00047.jsonl.gz",
+        "rows": 77993,
+        "bytes_gzip": 9325315,
+        "bytes_uncompressed": 31457083,
+        "sha256": "af4eb120f545c6b216b201bb6bcb0b3dbed7043f46a54226ccd40ada262d6d9d"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00048.jsonl.gz",
+        "rows": 80310,
+        "bytes_gzip": 9003327,
+        "bytes_uncompressed": 31457095,
+        "sha256": "de8456ff5ed5ac931fdb3986f3e73eb3d9afc37aac812fe824eade25767c664f"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00049.jsonl.gz",
+        "rows": 81591,
+        "bytes_gzip": 8560566,
+        "bytes_uncompressed": 31457084,
+        "sha256": "d86303f2365ca7a959f58f073f7e416dc5ba7a7d4364523014a0f51216fe8dd9"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00050.jsonl.gz",
+        "rows": 78630,
+        "bytes_gzip": 8920508,
+        "bytes_uncompressed": 31457202,
+        "sha256": "7038d901493e805693a054da37a2424846ec14b068cfb669a93a0d6ca650bbbb"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00051.jsonl.gz",
+        "rows": 77995,
+        "bytes_gzip": 9019871,
+        "bytes_uncompressed": 31457188,
+        "sha256": "0bc856c64c09004f054dd2f6c02a6a3573b70aae8b02144a8822ccbc9433861f"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00052.jsonl.gz",
+        "rows": 77022,
+        "bytes_gzip": 9016615,
+        "bytes_uncompressed": 31457219,
+        "sha256": "661a33c7c8241d099eefd02679503c5ae9eb2c79ef4e0a5cd382f83bd1b84b10"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00053.jsonl.gz",
+        "rows": 78234,
+        "bytes_gzip": 8844297,
+        "bytes_uncompressed": 31456897,
+        "sha256": "533e1d316c7255403ccb49d6903f7aefb75b8295af7014226efa63e6f2e6bbe5"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00054.jsonl.gz",
+        "rows": 77418,
+        "bytes_gzip": 8455192,
+        "bytes_uncompressed": 31457192,
+        "sha256": "d5b2719733fd6d47fc1b342cae443c08527aa8a0803d89b6ee7a553531b2fa33"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00055.jsonl.gz",
+        "rows": 77224,
+        "bytes_gzip": 8584527,
+        "bytes_uncompressed": 31456201,
+        "sha256": "97913115dbdc2e2a381c1dce850600fbde7fc393026006331ab4e1df4908d916"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00056.jsonl.gz",
+        "rows": 79939,
+        "bytes_gzip": 9320067,
+        "bytes_uncompressed": 31457237,
+        "sha256": "99b58b329dee1937bc0953b62ccd5c13d5db811ad4bb922254b5a609c57905c8"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00057.jsonl.gz",
+        "rows": 82962,
+        "bytes_gzip": 8971770,
+        "bytes_uncompressed": 31456968,
+        "sha256": "227d4076b45952c1128c60e3dfc8933db0e466b123759ab0d6b94acdbba96f7c"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00058.jsonl.gz",
+        "rows": 81207,
+        "bytes_gzip": 9043566,
+        "bytes_uncompressed": 31457166,
+        "sha256": "1a2f44a2e7cff4376dbf34a2240fc23cc726c8d463876d67cb553b74de6a737e"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00059.jsonl.gz",
+        "rows": 81232,
+        "bytes_gzip": 9144619,
+        "bytes_uncompressed": 31457260,
+        "sha256": "d4b9057554e34517b7276d1b7e22a95f7b01be8ddc98de382981524dfbd2cee2"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00060.jsonl.gz",
+        "rows": 79721,
+        "bytes_gzip": 9241140,
+        "bytes_uncompressed": 31457211,
+        "sha256": "b6c1d51c69cda2e03cdcdbc7a79a450e13706a2ea46d4a871499e18dd0b3c76b"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00061.jsonl.gz",
+        "rows": 80119,
+        "bytes_gzip": 9283277,
+        "bytes_uncompressed": 31456856,
+        "sha256": "84caa1cb47884ec2907e332618f13091a6bdff6f8c2a5b06e43763e402c40eb5"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00062.jsonl.gz",
+        "rows": 79202,
+        "bytes_gzip": 9283259,
+        "bytes_uncompressed": 31457255,
+        "sha256": "5287a5f2d7aac847aa6c9dce3c72a328bf076a5011cd6bdab5b6ac5ca0fe0949"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00063.jsonl.gz",
+        "rows": 79578,
+        "bytes_gzip": 9369614,
+        "bytes_uncompressed": 31456989,
+        "sha256": "8e708286425d77c4b6bf68906351490d340968e7fd0254276d9ff85f29ca7145"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00064.jsonl.gz",
+        "rows": 80726,
+        "bytes_gzip": 9106713,
+        "bytes_uncompressed": 31456949,
+        "sha256": "e23ae57dd29941feb1fb0342920303813c41c4a0a395672e03512f9a4f54fcfe"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00065.jsonl.gz",
+        "rows": 82214,
+        "bytes_gzip": 9077484,
+        "bytes_uncompressed": 31456577,
+        "sha256": "d7498b19eac09c1e920e2b5b7318090e100477190513d623094eceb96d6778a7"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00066.jsonl.gz",
+        "rows": 83777,
+        "bytes_gzip": 9038870,
+        "bytes_uncompressed": 31457135,
+        "sha256": "d4f9b6b102db1abe5d8a66b66eeb177747f6d90681276cedd8b9b59caf1d5fac"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00067.jsonl.gz",
+        "rows": 82569,
+        "bytes_gzip": 9156434,
+        "bytes_uncompressed": 31457136,
+        "sha256": "8f2f5020c2edc0779ea2025f1c44d50d0d5f34ea2f281234d93ff717ef4b3560"
+      },
+      {
+        "file": "hotpotqa/corpus/corpus-00068.jsonl.gz",
+        "rows": 27654,
+        "bytes_gzip": 2963369,
+        "bytes_uncompressed": 10234718,
+        "sha256": "9c61d1a410333ffcbad86d56be6502eed06041893cb94d7f45f56eb49981ce18"
+      }
+    ]
+  },
+  "official_compare_note": "This package preserves the official BEIR HotpotQA files and only shards the corpus for GitHub transport. Reconstructed corpus content is byte-for-byte identical to the official corpus.jsonl."
+}
